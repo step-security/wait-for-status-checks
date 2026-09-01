@@ -23,7 +23,7 @@
     "setup"
   ],
   "author": "step-security",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
