@@ -5,18 +5,6 @@ on:
       - main
   pull_request:
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-
-      - name: Install
-        run: npm install
-
-      - name: All
-        run: npm run all
-
   # Check whether the dist/index.js was generated correctly
   dist:
     runs-on: ubuntu-latest
@@ -31,6 +19,9 @@ jobs:
 
       - name: Dependencies
         run: npm ci
+
+      - name: test
+        run: npm test
 
       - name: Build
         run: npm run build
